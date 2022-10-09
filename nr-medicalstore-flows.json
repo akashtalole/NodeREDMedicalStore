@@ -1,0 +1,756 @@
+[
+    {
+        "id": "02443fbe8268b2b5",
+        "type": "tab",
+        "label": "MedicalStore",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7fbad7cdbaf339e3",
+        "type": "ui_tab",
+        "name": "Admin",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7d0cdc09f17d5bd4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6e35d3d11620a2af",
+        "type": "ui_group",
+        "name": "MedicalStore",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 1,
+        "disp": true,
+        "width": "21",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b4f22ed2e2d7db48",
+        "type": "ui_group",
+        "name": "Users",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3ab7a30b9bd9ee0f",
+        "type": "ui_group",
+        "name": "AddUser",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1e44d958de731950",
+        "type": "ui_group",
+        "name": "Sell",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5d94d32b89da400e",
+        "type": "ui_group",
+        "name": "Inventory",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "894810f227c70a48",
+        "type": "ui_group",
+        "name": "UsersList",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 4,
+        "disp": true,
+        "width": "21",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a702409b07739b6c",
+        "type": "ui_group",
+        "name": "AddSell",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9307f4da50302eed",
+        "type": "ui_group",
+        "name": "ListSell",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bfb3a2f23814f30e",
+        "type": "ui_group",
+        "name": "AddInventory",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef5e49657ee9bb65",
+        "type": "ui_group",
+        "name": "ListInventory",
+        "tab": "7fbad7cdbaf339e3",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "720d7f959050a002",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "6e35d3d11620a2af",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Sell",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_Users\",\"Admin_Inventory\",\"Admin_AddUser\",\"Admin_UsersList\",\"Admin_AddSell\",\"Admin_ListSell\",\"Admin_AddInventory\",\"Admin_ListInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_Sell\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 20,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "019476442659f645",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "6e35d3d11620a2af",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Users",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_Sell\",\"Admin_Inventory\",\"Admin_AddUser\",\"Admin_UsersList\",\"Admin_AddSell\",\"Admin_ListSell\",\"Admin_AddInventory\",\"Admin_ListInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_Users\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "1f70be2e9cad64b0",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "6e35d3d11620a2af",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Inventory",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_Users\",\"Admin_Sell\",\"Admin_AddUser\",\"Admin_UsersList\",\"Admin_AddSell\",\"Admin_ListSell\",\"Admin_AddInventory\",\"Admin_ListInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_Inventory\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "6c37c92430e0511d",
+        "type": "ui_ui_control",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "events": "all",
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "a286b95284a43d2e"
+            ]
+        ]
+    },
+    {
+        "id": "d577114794203bb9",
+        "type": "ui_form",
+        "z": "02443fbe8268b2b5",
+        "name": "Add user",
+        "label": "Create User",
+        "group": "3ab7a30b9bd9ee0f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Username",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mobile",
+                "value": "mobile",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Address",
+                "value": "address",
+                "type": "multiline",
+                "required": false,
+                "rows": 3
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": "",
+            "mobile": "",
+            "email": "",
+            "address": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 120,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a286b95284a43d2e",
+        "type": "debug",
+        "z": "02443fbe8268b2b5",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e0c8afd652889315",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "b4f22ed2e2d7db48",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Add User",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_Sell\",\"Admin_Inventory\",\"Admin_UsersList\",\"Admin_AddSell\",\"Admin_ListSell\",\"Admin_AddInventory\",\"Admin_ListInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_AddUser\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "fdb3424372873b06",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "b4f22ed2e2d7db48",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "List Users",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_AddUser\",\"Admin_AddSell\",\"Admin_ListSell\",\"Admin_AddInventory\",\"Admin_ListInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_UsersList\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "e82e5e8c52c0496f",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "1e44d958de731950",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Add Sell",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_AddUser\",\"Admin_ListSell\",\"Admin_AddInventory\",\"Admin_ListInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_AddSell\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "4f261781f9e0a0be",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "1e44d958de731950",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "List Sell",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_AddUser\",\"Admin_AddSell\",\"Admin_AddInventory\",\"Admin_ListInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_ListSell\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "bf4c9443aaf33aa5",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "5d94d32b89da400e",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Add Inventory",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_AddUser\",\"Admin_AddSell\",\"Admin_ListSell\",\"Admin_ListInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_AddInventory\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "5545fec550fc19ec",
+        "type": "ui_button",
+        "z": "02443fbe8268b2b5",
+        "name": "",
+        "group": "5d94d32b89da400e",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "List Inventory",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Admin_AddUser\",\"Admin_AddSell\",\"Admin_ListSell\",\"Admin_AddInventory\"],\"show\":[\"Admin_MedicalStore\",\"Admin_ListInventory\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "6c37c92430e0511d"
+            ]
+        ]
+    },
+    {
+        "id": "91aad018308197a8",
+        "type": "ui_table",
+        "z": "02443fbe8268b2b5",
+        "group": "894810f227c70a48",
+        "name": "Users List",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 120,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ca6ede284adb140a",
+        "type": "ui_form",
+        "z": "02443fbe8268b2b5",
+        "name": "Add user",
+        "label": "Create Sell",
+        "group": "a702409b07739b6c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Username",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mobile",
+                "value": "mobile",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Address",
+                "value": "address",
+                "type": "multiline",
+                "required": false,
+                "rows": 3
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": "",
+            "mobile": "",
+            "email": "",
+            "address": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 120,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ef34607656ca006",
+        "type": "ui_table",
+        "z": "02443fbe8268b2b5",
+        "group": "9307f4da50302eed",
+        "name": "Sell List",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 120,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "6f6402b55a814334",
+        "type": "ui_form",
+        "z": "02443fbe8268b2b5",
+        "name": "Add user",
+        "label": "Add Inventory",
+        "group": "bfb3a2f23814f30e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Username",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Mobile",
+                "value": "mobile",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Address",
+                "value": "address",
+                "type": "multiline",
+                "required": false,
+                "rows": 3
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": "",
+            "mobile": "",
+            "email": "",
+            "address": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 120,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf4fb681d79599ce",
+        "type": "ui_table",
+        "z": "02443fbe8268b2b5",
+        "group": "ef5e49657ee9bb65",
+        "name": "List Inventory",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 130,
+        "y": 920,
+        "wires": []
+    }
+]
